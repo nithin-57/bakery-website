@@ -1,0 +1,232 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 20px;
+    
+    color: white;
+    font-family: 'Flamenco', cursive;
+}
+
+header{
+    background-image: url(../img/cake_dessert_blackberries_raspberries_cream_115193_1920x1080.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+
+
+}
+
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+
+}
+
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+
+}
+
+
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    margin-left: -250px;
+}
+.main-nav{
+    float: right;
+    margin-top: 60px;
+
+}
+
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+
+}
+.main-nav li a{
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+
+}
+
+.main-nav li a:hover{
+    border-bottom: 2px solid #bf55ec;
+
+}
+
+.main-content-header{
+    width: 1180px;
+    position:absolute;
+    /*border: 1px solid red;*/
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+h1{
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+
+}
+
+.btn-full{
+    background-color: transparent;
+    color: #bf55ec;
+    margin-right: 15px;
+    border: 1px solid #bf55ec;
+}
+
+.btn-nav{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.about{
+    text-align: center;
+    background-color: #221100;
+    box-sizing: content-box ;
+}
+.about h1{ 
+    color: white;
+    top: 100%;
+    left: 0%;
+}
+.about p1{
+    color: white;
+    font-size: 150%;
+    word-spacing: 5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.prod h1{
+    text-align: center;
+    color: whitesmoke;
+}
+.card-img-top{
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+.prod{
+    background-color: #775566;
+}
+
+.card-body h5{
+    color: black;
+    
+}
+.card-text{
+    color: black;
+}
+
+.order-main{
+    background-color: dimgrey
+}
+.order{
+    font-size: 40px;
+    text-align: center;
+   margin-top: 20%;
+    left:40%;
+}
+
+.show-main{
+    background-color: dimgrey;
+} 
+.show{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20%;
+    margin-left: 0%;
+}
+.btn-primary{
+    color: whitesmoke;
+    position: relative; left: 45%;top: 2px;
+    border-radius: 200px;
+    border: 1px solid whitesmoke;
+}
+
+.colorchange{
+    animation: colorchangebakers 1s infinite;
+
+}
+
+@keyframes colorchangebakers {
+    0%{color: red;}
+    25%{color: #bf55ec;}
+    50%{color: #fff;}
+    100%{color: #bf55ec;}
+}
+
+.mobile-icon{
+    display: none;
+}
+
+/*////Responsive queries////*/
+
+@media only screen and (max-width: 1180px){
+    .main-content-header{
+        width: 100px;
+        padding: 0 2%;
+    }
+}
+
+@media only screen and (max-width: 99px){
+    h1{
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 180%;
+    }
+    .main-nav{display: none;}
+
+    .mobile-icon{
+    display: inline-block;
+    color: #fff;
+    margin-top: 30px;
+    margin-right: 20px;
+    }
+
+    .main-nav li{
+        float: left;
+        display: block;
+        margin-top: 10px;
+    }
+
+    
+}
